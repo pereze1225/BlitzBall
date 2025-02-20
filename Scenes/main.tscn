@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://3m0rawj16ok7"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_i2465"]
+[ext_resource type="PackedScene" uid="uid://vpifghc1nbb0" path="res://Scenes/GridManager.tscn" id="2_0yu37"]
+[ext_resource type="Script" path="res://Scenes/camera_3d.gd" id="3_ediih"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_i2465")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 10, 27.972, 10)
+size = 19.5173
+script = ExtResource("3_ediih")
+
+[node name="GridManager" parent="." instance=ExtResource("2_0yu37")]
